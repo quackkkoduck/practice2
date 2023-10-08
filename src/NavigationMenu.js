@@ -46,7 +46,7 @@ function NavigationMenu() {
 
                 {/* 회원가입 메뉴 */}
                 <div className="signmenu">
-                    <a href="127.0.0.1:8080/auth/signup" aria-label="회원가입" className="menu-item theme-dark">
+                    <a href="/auth/signup" aria-label="회원가입" className="menu-item theme-dark">
                         회원가입
                     </a>
 
