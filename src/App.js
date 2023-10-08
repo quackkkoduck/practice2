@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavigationMenu from './NavigationMenu';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<NavigationMenu/>}></Route>
+            <Route path="/1" element={<NavigationMenu/>}></Route>
+            <Route path="/3" element={<NavigationMenu/>}></Route>
+        </Routes>
+      
+        </BrowserRouter>
+      {/* 다른 컴포넌트나 내용을 여기에 추가할 수 있습니다. */}
     </div>
   );
 }
